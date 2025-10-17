@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Progress Section Lock</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .progress-line {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 4px;
+      background-color: #e5e7eb;
+      transform: translateX(-50%);
+      height: 100%;
+    }
+    .progress-fill {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 4px;
+      background-color: #22c55e;
+      transform: translateX(-50%);
+      height: 0%;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 flex">
+
+  <!-- Sidebar progress -->
+  <div class="w-20 relative flex flex-col items-center py-8">
+    <div class="progress-line"></div>
+    <div class="progress-fill" id="progressFill"></div>
+    <!-- 10 circles -->
+    <div id="progressCircles" class="flex flex-col space-y-12 relative z-10">
+      <div class="w-10 h-10 flex items-center justify-center border-4 border-gray-300 rounded-full bg-white">1</div>
+      <div class="w-10 h-10 flex items-center justify-center border-4 border-gray-300 rounded-full bg-white">2</div>
+      <div class="w-10 h-10 flex items-center justify-center border-4 border-gray-300 rounded-full bg-white">3</div>
+      <div class="w-10 h-10 flex items-center justify-center border-4 border-gray-300 rounded-full bg-white">4</div>
+      <div class="w-10 h-10 flex items-center justify-center border-4 border-gray-300 rounded-full bg-white">5</div>
+      <div class="w-10 h-10 flex items-center justify-center border-4 border-gray-300 rounded-full bg-white">6</div>
+      <div class="w-10 h-10 flex items-center justify-center border-4 border-gray-300 rounded-full bg-white">7</div>
+      <div class="w-10 h-10 flex items-center justify-center border-4 border-gray-300 rounded-full bg-white">8</div>
+      <div class="w-10 h-10 flex items-center justify-center border-4 border-gray-300 rounded-full bg-white">9</div>
+      <div class="w-10 h-10 flex items-center justify-center border-4 border-gray-300 rounded-full bg-white">10</div>
+    </div>
+  </div>
+
+  <!-- Content sections -->
+  <div class="flex-1 relative">
+    <!-- Tombol Restart -->
+    <button id="restartBtn" 
+      class="absolute top-4 right-4 px-4 py-2 bg-red-600 text-white rounded-lg shadow">
+      Restart
+    </button>
+
+    <!-- 10 Section -->
+    <div id="section1" class="section h-screen flex flex-col justify-center items-center bg-white">
+      <h1 class="text-3xl font-bold mb-6">Section 1</h1>
+      <p class="max-w-xl text-center">Ini teks panjang Section 1. Scroll sampai bawah baru lanjut.</p>
+      <button class="next-btn mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg">Next</button>
+    </div>
+    <div id="section2" class="section h-screen flex flex-col justify-center items-center bg-gray-100">
+      <h1 class="text-3xl font-bold mb-6">Section 2</h1>
+      <p class="max-w-xl text-center">Ini teks panjang Section 2.</p>
+      <button class="next-btn mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg">Next</button>
+    </div>
+    <div id="section3" class="section h-screen flex flex-col justify-center items-center bg-white">
+      <h1 class="text-3xl font-bold mb-6">Section 3</h1>
+      <p class="max-w-xl text-center">Teks panjang Section 3.</p>
+      <button class="next-btn mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg">Next</button>
+    </div>
+    <div id="section4" class="section h-screen flex flex-col justify-center items-center bg-gray-100">
+      <h1 class="text-3xl font-bold mb-6">Section 4</h1>
+      <p class="max-w-xl text-center">Teks panjang Section 4.</p>
+      <button class="next-btn mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg">Next</button>
+    </div>
+    <div id="section5" class="section h-screen flex flex-col justify-center items-center bg-white">
+      <h1 class="text-3xl font-bold mb-6">Section 5</h1>
+      <p class="max-w-xl text-center">Teks panjang Section 5.</p>
+      <button class="next-btn mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg">Next</button>
+    </div>
+    <div id="section6" class="section h-screen flex flex-col justify-center items-center bg-gray-100">
+      <h1 class="text-3xl font-bold mb-6">Section 6</h1>
+      <p class="max-w-xl text-center">Teks panjang Section 6.</p>
+      <button class="next-btn mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg">Next</button>
+    </div>
+    <div id="section7" class="section h-screen flex flex-col justify-center items-center bg-white">
+      <h1 class="text-3xl font-bold mb-6">Section 7</h1>
+      <p class="max-w-xl text-center">Teks panjang Section 7.</p>
+      <button class="next-btn mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg">Next</button>
+    </div>
+    <div id="section8" class="section h-screen flex flex-col justify-center items-center bg-gray-100">
+      <h1 class="text-3xl font-bold mb-6">Section 8</h1>
+      <p class="max-w-xl text-center">Teks panjang Section 8.</p>
+      <button class="next-btn mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg">Next</button>
+    </div>
+    <div id="section9" class="section h-screen flex flex-col justify-center items-center bg-white">
+      <h1 class="text-3xl font-bold mb-6">Section 9</h1>
+      <p class="max-w-xl text-center">Teks panjang Section 9.</p>
+      <button class="next-btn mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg">Next</button>
+    </div>
+    <div id="section10" class="section h-screen flex flex-col justify-center items-center bg-gray-100">
+      <h1 class="text-3xl font-bold mb-6">Section 10</h1>
+      <p class="max-w-xl text-center">Teks panjang Section 10. Akhir.</p>
+    </div>
+  </div>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const circles = document.querySelectorAll('#progressCircles div');
+    const progressFill = document.getElementById('progressFill');
+    const nextButtons = document.querySelectorAll('.next-btn');
+    const restartBtn = document.getElementById('restartBtn');
+
+    let currentIndex = parseInt(localStorage.getItem("currentSection")) || 0;
+
+    // tampilkan hanya section aktif
+    function showSection(index) {
+      sections.forEach((sec, i) => {
+        sec.style.display = (i === index) ? "flex" : "none";
+      });
+      circles.forEach((c, i) => {
+        if (i < index) {
+          c.classList.add("border-green-500", "bg-green-100");
+        } else if (i === index) {
+          c.classList.add("border-green-500");
+          c.classList.remove("bg-green-100");
+        } else {
+          c.classList.remove("border-green-500", "bg-green-100");
+        }
+      });
+      let percent = (index) / (sections.length - 1) * 100;
+      progressFill.style.height = percent + "%";
+    }
+
+    showSection(currentIndex);
+
+    // tombol next
+    nextButtons.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        if (i + 1 < sections.length) {
+          currentIndex = i + 1;
+          localStorage.setItem("currentSection", currentIndex);
+          showSection(currentIndex);
+          sections[currentIndex].scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+
+    // tombol restart
+    restartBtn.addEventListener("click", () => {
+      localStorage.removeItem("currentSection");
+      currentIndex = 0;
+      showSection(currentIndex);
+      sections[currentIndex].scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>

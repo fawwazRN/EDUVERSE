@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelas Dasar Zoologi</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="src/asset/img/a-logo-utama.png"
+      class="w-full h-full object-cover" />
+  </head>
+  <body class="flex bg-[#5B9760]">
+    <div class="relative flex flex-col items-center py-8 w-20">
+      <!-- angka progress -->
+      <div id="progressCircles" class="z-10 fixed flex flex-col space-y-12">
+        <div class="lingkaran-angka">1</div>
+        <div class="lingkaran-angka">2</div>
+        <div class="lingkaran-angka">3</div>
+        <div class="lingkaran-angka">4</div>
+        <div class="lingkaran-angka">5</div>
+      </div>
+    </div>
+    <!-- contain section -->
+    <div class="relative flex-1">
+      <div
+        id="sec1"
+        class="items-center space-y-10 mt-20 px-5 sec-belajar section">
+        <div class="text-center">
+          <h1 class="font-bold text-3xl">Selamat Datang di</h1>
+          <h2 class="font-medium text-xl">kelas Zoologi</h2>
+          <div class="bg-black mt-3 rounded-full w-full h-[1px]"></div>
+        </div>
+        <div
+          class="flex flex-col gap-5 bg-slate-100 p-10 rounded-xl w-96 text-slate-900">
+          <p class="text-center">disini anda akan mempelajari</p>
+          <ul class="list-disc">
+            <li>Hewan dan ciri cirinya</li>
+            <li>Herbivor, karnivor, dan omnivor</li>
+            <li>mengenal suara hewan</li>
+            <li>latihan akhir</li>
+          </ul>
+        </div>
+        <button class="sec-button next-btn">next</button>
+      </div>
+      <div
+        id="sec2"
+        class="items-center space-y-10 mt-20 px-5 sec-belajar section">
+        <div class="text-center">
+          <h1 class="font-bold text-3xl">Hewan dan Ciri Cirinya</h1>
+          <h2 class="font-medium text-xl">kelas Zoologi</h2>
+          <div class="bg-black mt-3 rounded-full w-full h-[1px]"></div>
+        </div>
+        <div class="space-y-10">
+          <div class="flex flex-col items-center gap-5 text-center">
+            <img
+              src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg"
+              alt=""
+              class="border-2 border-gray-800 rounded-2xl w-3/4 h-80 object-cover" />
+            <div class="w-full">
+              <h1 class="text-2xl">hewan apakah ini</h1>
+              <h2 class="text-xl">apa ciri cirinya?</h2>
+            </div>
+            <div class="">
+              <ul class="text-start list-decimal">
+                <li>berbulu lebat</li>
+                <li>memiliki 2 telinga, mata</li>
+                <li>tidak suka dengan air, terutama air dingin</li>
+                <li>bisa dipelihara</li>
+                <li class="font-semibold">dan masih banyak lagi...</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-5 text-center">
+            <img
+              src="https://images.pexels.com/photos/2220336/pexels-photo-2220336.jpeg"
+              alt=""
+              class="border-2 border-gray-800 rounded-2xl w-3/4 h-80 object-cover" />
+            <div class="w-full">
+              <h1 class="text-2xl">hewan apakah ini</h1>
+              <h2 class="text-xl">apa ciri cirinya?</h2>
+            </div>
+            <div class="">
+              <ul class="text-start list-decimal">
+                <li>berbulu lebat</li>
+                <li>memiliki 2 telinga, mata</li>
+                <li>memiliki cakar dan gigi yang tajam</li>
+                <li>suka memangsa hewan ataupun manusia</li>
+                <li class="font-semibold">dan masih banyak lagi...</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="sec-button next-btn">next</button>
+      </div>
+      <div
+        id="sec3"
+        class="items-center space-y-10 mt-20 px-5 sec-belajar section">
+        <div class="text-center">
+          <h1 class="font-bold text-3xl">Herbivor, Karnivor, Omnivor</h1>
+          <h2 class="font-medium text-xl">kelas Zoologi</h2>
+          <div class="bg-black mt-3 rounded-full w-full h-[1px]"></div>
+        </div>
+        <div class="space-y-7">
+          <div class="bg-slate-400 p-3 rounded-lg">
+            <h2 class="font-semibold text-2xl">Herbivor</h2>
+            <p class="text-justify indent-14">
+              Herbivor, pemakan tumbuhan, atau lataboga dalam zoologi adalah
+              hewan yang hanya makan tumbuhan dan tidak memakan daging.
+            </p>
+            <p>contoh hewan:</p>
+            <ul class="list-disc list-inside">
+              <li>sapi</li>
+              <li>kelinci</li>
+              <li>gajah</li>
+              <li>jerapah</li>
+            </ul>
+          </div>
+          <div class="bg-stone-600 p-3 rounded-lg">
+            <h2 class="font-semibold text-2xl">karnivor</h2>
+            <p class="text-justify indent-14">
+              Karnivor, pemakan daging, atau satwaboga adalah makhluk hidup yang
+              memperoleh energi dan nutrisi yang dibutuhkan dari makanan berupa
+              jaringan hewan
+            </p>
+            <p>contoh hewan:</p>
+            <ul class="list-disc list-inside">
+              <li>singa</li>
+              <li>harimau</li>
+              <li>komodo</li>
+            </ul>
+          </div>
+          <div class="bg-slate-400 p-3 rounded-lg">
+            <h2 class="font-semibold text-2xl">omnivor</h2>
+            <p class="text-justify indent-14">
+              Omnivor, pemakan segala, atau sarwaboga adalah spesies yang
+              memakan tumbuhan dan hewan sebagai sumber makanan pokoknya
+            </p>
+            <p>contoh hewan:</p>
+            <ul class="list-disc list-inside">
+              <li>babi</li>
+              <li>tupai</li>
+              <li>tikus</li>
+            </ul>
+          </div>
+        </div>
+        <button class="sec-button next-btn">next</button>
+      </div>
+      <div
+        id="sec4"
+        class="items-center space-y-10 mt-20 px-5 sec-belajar section">
+        <div class="text-center">
+          <h1 class="font-bold text-3xl">Mengenal suara hewan</h1>
+          <h2 class="font-medium text-xl">kelas Zoologi</h2>
+          <div class="bg-black mt-3 rounded-full w-full h-[1px]"></div>
+        </div>
+        <div><p>coming soon</p></div>
+        <button class="sec-button next-btn">next</button>
+      </div>
+    </div>
+    <div
+      id="sec5"
+      class="flex flex-col justify-center items-start p-8 w-full overflow-y-auto section">
+      <h1 class="mb-6 font-bold text-3xl">Latihan zoologi dasar</h1>
+      <div
+        class="lg:justify-between lg:gap-y-20 space-y-20 lg:space-y-0 lg:grid lg:grid-cols-2 w-full">
+        <!-- Soal 1 -->
+        <div class="mb-6">
+          <p class="font-semibold">
+            1. ciri ciri kucing adalah yang dibawah ini, kecuali...
+          </p>
+          <div class="col-1">
+            <label
+              ><input type="radio" name="q1" value="A" /> berbulu lebat</label
+            >
+            <label
+              ><input type="radio" name="q1" value="B" />kurang suka dengan
+              air</label
+            >
+            <label
+              ><input type="radio" name="q1" value="C" /> memiliki cakar</label
+            >
+            <label
+              ><input type="radio" name="q1" value="D" /> suka memakan apa
+              saja</label
+            >
+          </div>
+        </div>
+
+        <!-- Soal 2 -->
+        <div class="mb-6">
+          <p class="font-semibold">2. hewan herbivora adalah...</p>
+          <div class="col-4">
+            <label><input type="radio" name="q2" value="A" /> ayam</label>
+            <label><input type="radio" name="q2" value="B" /> babi</label>
+            <label><input type="radio" name="q2" value="C" /> tupai</label>
+            <label><input type="radio" name="q2" value="D" />kelinci</label>
+          </div>
+        </div>
+
+        <!-- Soal 3 -->
+        <div class="mb-6">
+          <p class="font-semibold">
+            3. hewan karnivor adalah hewan pemakan daging atau yang disebut
+            dengan...
+          </p>
+          <div class="col-1">
+            <label><input type="radio" name="q3" value="A" /> sarwaboga</label>
+            <label><input type="radio" name="q3" value="B" /> satwaboga</label>
+            <label><input type="radio" name="q3" value="C" /> raja hutan</label>
+            <label><input type="radio" name="q3" value="D" /> lataboga</label>
+          </div>
+        </div>
+
+        <!-- Soal 4 -->
+        <div class="mb-6">
+          <p class="font-semibold">4. hewan omnivora memakan...</p>
+          <div class="col-1">
+            <label><input type="radio" name="q4" value="A" />hewan</label>
+            <label><input type="radio" name="q4" value="B" /> tumbuhan</label>
+            <label><input type="radio" name="q4" value="C" /> besi</label>
+            <label
+              ><input type="radio" name="q4" value="D" />memakan tumbuhan dan
+              hewan</label
+            >
+          </div>
+        </div>
+
+        <!-- Soal 5 -->
+        <div class="mb-6">
+          <p class="font-semibold">
+            5. yang bukan merupakan hewan omnivor dibawah ini adalah...
+          </p>
+          <div class="col-4">
+            <label
+              ><input type="radio" name="q5" value="A" />
+              <img
+                src="https://images.pexels.com/photos/51340/rat-pets-eat-51340.jpeg"
+                class="border-2 border-black rounded-lg w-20 h-20 object-cover"
+            /></label>
+            <label
+              ><input type="radio" name="q5" value="B" /><img
+                src="https://images.pexels.com/photos/54602/raccoon-bear-zoo-saeugentier-54602.jpeg"
+                class="border-2 border-black rounded-lg w-20 h-20 object-cover"
+            /></label>
+            <label
+              ><input type="radio" name="q5" value="C" /><img
+                src="https://images.pexels.com/photos/3739327/pexels-photo-3739327.jpeg"
+                class="border-2 border-black rounded-lg w-20 h-20 object-cover"
+            /></label>
+            <label
+              ><input type="radio" name="q5" value="D" /><img
+                src="https://images.pexels.com/photos/47547/squirrel-animal-cute-rodents-47547.jpeg"
+                class="border-2 border-black rounded-lg w-20 h-20 object-cover"
+            /></label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tombol Akhiri -->
+      <button
+        id="endBtn"
+        class="bg-red-600 mt-6 px-6 py-2 rounded-lg text-white">
+        Akhiri
+      </button>
+
+      <!-- Modal Konfirmasi -->
+      <div
+        id="confirmModal"
+        class="hidden fixed inset-0 justify-center items-center bg-black bg-opacity-50">
+        <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+          <p class="mb-4 font-semibold text-lg">Yakin mengakhiri?</p>
+          <div class="space-x-4">
+            <button
+              id="confirmYes"
+              class="bg-green-600 px-4 py-2 rounded-lg text-white">
+              Yakin
+            </button>
+            <button
+              id="confirmNo"
+              class="bg-gray-400 px-4 py-2 rounded-lg text-white">
+              Tidak
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- nilai -->
+    <div
+      class="hidden top-0 left-0 z-50 fixed justify-center items-center bg-black/50 w-full h-screen"
+      id="nilaiPopupContainer">
+      <div
+        id="nilaiPopup"
+        class="relative flex-col justify-center items-center bg-white shadow-lg p-6 border rounded-xl w-60 h-auto">
+        <button
+          id="closePopup"
+          class="top-2 right-4 absolute text-gray-500 text-3xl">
+          &times;
+        </button>
+        <div class="flex flex-col justify-center items-center">
+          <h2 class="mt-4 mb-2 w-full font-bold text-black text-xl text-center">
+            Nilai Anda
+          </h2>
+          <div
+            id="scoreDisplayContainer"
+            class="flex justify-center items-center m-auto w-32 h-32">
+            <p id="nilaiTextDisplay" class="font-extrabold text-3xl"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Inisialisasi Navigasi (tetap sama)
+      const sections = document.querySelectorAll(".section");
+      const circles = document.querySelectorAll("#progressCircles div");
+      const nextButtons = document.querySelectorAll(".next-btn");
+
+      let currentIndex = parseInt(localStorage.getItem("currentSection")) || 0;
+
+      function showSection(index) {
+        sections.forEach((sec, i) => {
+          sec.style.display = i === index ? "flex" : "none";
+        });
+        circles.forEach((c, i) => {
+          if (i < index) {
+            c.classList.add("border-green-500", "bg-green-300");
+          } else if (i === index) {
+            c.classList.add("border-green-500");
+            c.classList.remove("bg-green-500");
+          } else {
+            c.classList.remove("border-green-500", "bg-green-300");
+          }
+        });
+      }
+
+      showSection(currentIndex);
+
+      nextButtons.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          if (i + 1 < sections.length) {
+            currentIndex = i + 1;
+            localStorage.setItem("currentSection", currentIndex);
+            showSection(currentIndex);
+            sections[currentIndex].scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+
+      // Logika Kuis dan Pop-up Nilai (Perubahan Utama)
+      const endBtn = document.getElementById("endBtn");
+      const confirmModal = document.getElementById("confirmModal");
+      const confirmYes = document.getElementById("confirmYes");
+      const confirmNo = document.getElementById("confirmNo");
+
+      // Elemen Pop-up Nilai
+      const nilaiPopupContainer = document.getElementById(
+        "nilaiPopupContainer"
+      );
+      const scoreDisplayContainer = document.getElementById(
+        "scoreDisplayContainer"
+      ); // Kontainer Nilai
+      const nilaiTextDisplay = document.getElementById("nilaiTextDisplay"); // Teks Nilai
+      const closePopup = document.getElementById("closePopup");
+
+      endBtn.addEventListener("click", () => {
+        confirmModal.classList.remove("hidden");
+        confirmModal.classList.add("flex");
+      });
+
+      confirmNo.addEventListener("click", () => {
+        confirmModal.classList.add("hidden");
+        confirmModal.classList.remove("flex");
+      });
+
+      confirmYes.addEventListener("click", () => {
+        let score = 0;
+
+        // Kunci jawaban yang BENAR
+        const answers = {
+          q1: "D",
+          q2: "D",
+          q3: "B",
+          q4: "D",
+          q5: "C",
+        };
+
+        const bobot = {
+          q1: 20,
+          q2: 20,
+          q3: 20,
+          q4: 20,
+          q5: 20,
+        };
+
+        // Cek jawaban
+        Object.keys(answers).forEach((q) => {
+          const checked = document.querySelector(`input[name="${q}"]:checked`);
+          if (checked && checked.value === answers[q]) {
+            score += bobot[q];
+          }
+        });
+
+        // Hapus kelas warna/bentuk sebelumnya
+        scoreDisplayContainer.classList.remove(
+          "rounded-full",
+          "border-red-500",
+          "border-green-500",
+          "border-4",
+          "text-red-500",
+          "text-green-500"
+        );
+
+        // Tentukan warna dan bentuk
+        if (score >= 80) {
+          scoreDisplayContainer.classList.add(
+            "rounded-full",
+            "border-green-500",
+            "border-4"
+          );
+          nilaiTextDisplay.classList.add("text-green-500");
+        } else {
+          scoreDisplayContainer.classList.add(
+            "rounded-md",
+            "border-red-500",
+            "border-4"
+          ); // Menggunakan rounded-md (kotak) jika nilai < 80
+          nilaiTextDisplay.classList.add("text-red-500");
+        }
+
+        // Simpan nilai ke localStorage untuk pembatasan di index.html
+        localStorage.setItem("nilaiAkhirZoologi", score);
+
+        // 1. Sembunyikan Modal Konfirmasi
+        confirmModal.classList.add("hidden");
+        confirmModal.classList.remove("flex");
+
+        // 2. Tampilkan Pop-up Nilai
+        nilaiTextDisplay.textContent = score;
+        nilaiPopupContainer.classList.remove("hidden");
+        nilaiPopupContainer.classList.add("flex");
+      });
+
+      // 3. Tombol X (Tutup Pop-up) - kembali ke index.html
+      closePopup.addEventListener("click", () => {
+        // Hapus status sesi dan navigasi ke halaman utama
+        localStorage.removeItem("currentSection");
+        window.location.href = "index.html";
+      });
+    </script>
+  </body>
+</html>

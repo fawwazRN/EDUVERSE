@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/src/output.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="src/asset/img/a-logo-utama.png"
+      class="w-full h-full object-cover" />
+  </head>
+  <body
+    class="bg-first dark:bg-bgDarkAll font-outift dark:text-white transition-all duration-300">
+    <!--header-->
+    <header
+      class="flex justify-center items-center bg-white dark:bg-bgDarkFirst p-2"
+      id="">
+      <nav class="hidden"></nav>
+      <img
+        src="src/asset/img/aa-logo-utama-2.png"
+        alt=""
+        class="dark:hidden w-60 h-24 object-contain" />
+      <img
+        src="src/asset/img/aa-logo-utama-3.png"
+        alt=""
+        class="hidden dark:block w-60 h-24 object-contain" />
+    </header>
+
+    <!-- color gradient -->
+    <section id="color-bg" class="relative w-full h-32 lg:h-60">
+      <video
+        src="src/asset/video/head.mp4"
+        class="w-full h-full object-cover"
+        autoplay
+        muted
+        loop></video>
+      <div
+        id="tutupan"
+        class="top-0 right-0 z-10 absolute bg-black opacity-80 w-full h-full"></div>
+      <div class="top-0 left-0 z-20 absolute w-full text-center hero">
+        <h1
+          id="teks-kedatangan"
+          class="opacity-0 pt-5 lg:pt-20 font-roboto font-bold text-white text-4xl lg:text-7xl"></h1>
+      </div>
+    </section>
+    <!-- search -->
+    <section
+      id="search"
+      class="-top-10 z-30 relative lg:flex lg:items-center lg:gap-10 space-y-5 lg:space-y-0 bg-white dark:bg-bgDarkFirst px-5 py-10 rounded-t-3xl w-full text-sm">
+      <div
+        id="search-bar"
+        class="flex bg-first px-6 py-3 rounded-full lg:w-1/2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon-tabler icon-tabler-search icons-tabler-outline dark:text-black icon">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+          <path d="M21 21l-6 -6" />
+        </svg>
+        <input
+          type="text"
+          placeholder="look for your learning materials"
+          class="bg-transparent pl-3 border-none outline-none w-full dark:text-black text-sm"
+          id="searchBar" />
+      </div>
+      <div id="find-class" class="lg:w-1/2">
+        <button
+          class="flex justify-center items-center bg-second py-3 rounded-full w-full lg:h-full font-bold text-white lg:text-xl">
+          Find Your Class!
+        </button>
+      </div>
+      <!-- overlay -->
+      <div
+        id="overlay"
+        class="hidden lg:top-[435px] left-0 z-40 fixed bg-black/70 backdrop-blur-sm w-full h-[calc(100%-52px)] overflow-y-auto">
+        <div
+          class="bg-white shadow-xl mx-auto mt-6 p-6 rounded-2xl w-11/12 max-w-5xl lg:h-64 lg:overflow-y-scroll">
+          <div class="flex justify-between items-center mb-4">
+            <h2 class="font-bold text-xl">Hasil Pencarian</h2>
+            <button
+              onclick="closeOverlay()"
+              class="bg-red-500 hover:bg-red-600 px-3 py-1 rounded-lg font-bold text-white transition">
+              Tutup
+            </button>
+          </div>
+          <!-- card container -->
+          <div
+            id="cardContainer"
+            class="justify-center items-center gap-6 grid grid-cols-2 dark:text-black">
+            <a href="kelas-dasar-zoology.html" class="card link"
+              >Kelas Dasar Zoologi</a
+            >
+            <a href="kelas-dasar-zoology.html" class="card link"
+              >Beginner Zoology Class</a
+            >
+            <a href="kelas-dasar-zoology.html" class="card link"
+              >صف أساسيات علم الحيوان</a
+            >
+            <a href="" class="card link">Kelas Dasar Bahasa Indonesia</a>
+            <a href="" class="card link">Beginner Indonesian Language Class</a>
+            <a href="" class="card link">صف أساسيات اللغة الإندونيسية</a>
+            <a href="" class="card link">Kelas Dasar Bahasa Inggris</a>
+            <a href="" class="card link">Beginner English Language Class</a>
+            <a href="" class="card link">صف أساسيات اللغة الإنجليزية</a>
+            <a href="" class="card link">Kelas Dasar Geografi Indonesia</a>
+            <a href="" class="card link">Beginner Indonesian Geography Class</a>
+            <a href="" class="card link">صف أساسيات جغرافية إندونيسيا</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- iklan -->
+    <section
+      id="iklan"
+      class="lg:flex lg:gap-10 space-y-4 lg:space-y-0 lg:mx-20 px-5">
+      <button class="rounded-md w-full overflow-hidden">
+        <img
+          class="rounded-xl w-full h-auto object-contain"
+          src="src/asset/img/diskon.png"
+          alt="" />
+      </button>
+      <button class="rounded-md w-full overflow-hidden">
+        <img
+          class="rounded-xl w-full h-auto object-contain"
+          src="src/asset/img/try-learning.png"
+          alt="" />
+      </button>
+    </section>
+    <!-- kotak 6 pelajaran -->
+    <section
+      id="pelajaran"
+      class="lg:space-y-5 bg-white dark:bg-bgDarkFirst mx-5 lg:mx-20 mt-10 px-5 rounded-2xl">
+      <div class="flex justify-between items-center px-5 pt-10 w-full text-2xl">
+        <img
+          src="src/asset/img/aa-logo-utama-2.png"
+          alt=""
+          class="dark:hidden w-40 lg:w-60" />
+        <img
+          src="src/asset/img/aa-logo-utama-3.png"
+          alt=""
+          class="hidden dark:block w-40 lg:w-60" />
+        <h1>We Provide</h1>
+      </div>
+      <div class="gap-3 grid grid-cols-3 lg:grid-cols-6 py-5">
+        <div class="div-pelajaran">
+          <a class="bg-[#AAFFB1] pelajaran" href="science.html">
+            <img
+              src="src/asset/img/logo-pelajaran/siens.png"
+              alt=""
+              class="gambar-pelajaran" />
+          </a>
+          <p class="teks-pelajaran">Science</p>
+        </div>
+        <div class="div-pelajaran">
+          <a class="bg-[#FF8F8F] pelajaran">
+            <img
+              src="src/asset/img/logo-pelajaran/bindo.png"
+              alt=""
+              class="gambar-pelajaran" />
+          </a>
+          <p class="teks-pelajaran">Language <sup>ID</sup></p>
+        </div>
+        <div class="div-pelajaran">
+          <a class="bg-[#ABDBFF] pelajaran">
+            <img
+              src="src/asset/img/logo-pelajaran/bingg.png"
+              alt=""
+              class="gambar-pelajaran" />
+          </a>
+          <p class="teks-pelajaran">Language <sup>EN</sup></p>
+        </div>
+        <div class="div-pelajaran">
+          <a class="bg-[#B7FEEC] pelajaran">
+            <img
+              src="src/asset/img/logo-pelajaran/geograpi.png"
+              alt=""
+              class="gambar-pelajaran" />
+          </a>
+          <p class="teks-pelajaran">Geography</p>
+        </div>
+        <div class="div-pelajaran">
+          <a class="bg-[#A96464] pelajaran">
+            <img
+              src="src/asset/img/logo-pelajaran/histori.png"
+              alt=""
+              class="gambar-pelajaran" />
+          </a>
+          <p class="teks-pelajaran">History</p>
+        </div>
+        <div class="div-pelajaran">
+          <a class="bg-[#CEE2FF] pelajaran">
+            <img
+              src="src/asset/img/logo-pelajaran/kotak4.png"
+              alt=""
+              class="gambar-pelajaran" />
+          </a>
+          <p class="teks-pelajaran">Other</p>
+        </div>
+      </div>
+    </section>
+    <!-- iklan 2 -->
+    <section
+      class="space-y-5 bg-white dark:bg-bgDarkFirst mx-5 lg:mx-20 mt-10 py-5 rounded-xl">
+      <h1 class="ml-5 text-2xl lg:text-3xl">The features we provide</h1>
+      <div
+        class="flex flex-nowrap gap-4 px-5 overflow-x-auto snap-mandatory snap-x hide-scrollbar">
+        <button class="rounded-md h-20 snap-always snap-center shrink-0">
+          <img
+            class="rounded-xl w-auto h-full object-contain"
+            src="src/asset/img/learn-video.png"
+            alt="" />
+        </button>
+        <button class="rounded-md h-20 snap-always snap-center shrink-0">
+          <img
+            class="rounded-xl w-auto h-full object-contain"
+            src="src/asset/img/sertivikasi.png"
+            alt="" />
+        </button>
+        <button class="rounded-md h-20 snap-always snap-center shrink-0">
+          <img
+            class="rounded-xl w-auto h-full object-contain"
+            src="src/asset/img/coming-soon.png"
+            alt="" />
+        </button>
+      </div>
+    </section>
+    <!-- smart learning -->
+    <section
+      class="flex lg:flex flex-col lg:flex-col justify-center lg:justify-center items-center lg:items-center lg:gap-14 space-y-7 lg:space-y-0 lg:m-0 mx-5 mt-10 lg:px-20 lg:w-full lg:h-screen text-center">
+      <h1 class="text-4xl lg:text-9xl">
+        Smash Your Goals with
+        <span class="inline-block relative px-2">
+          <span
+            class="absolute inset-0 bg-indigo-400 -skew-x-[10deg] transform"></span>
+          <span class="z-10 relative text-white dark:text-black"
+            >Smart Learning!</span
+          >
+        </span>
+      </h1>
+      <p class="lg:px-80 font-light lg:text-2xl">
+        "Every big achievement starts with one small step. With smart learning,
+        you can unlock new opportunities, sharpen your skills, and get closer to
+        the future you've been dreaming of. Don't wait for tomorrow—start
+        today!"
+      </p>
+      <button
+        class="flex justify-center items-center bg-second py-3 rounded-full w-56 font-bold text-white lg:text-2xl">
+        Achieve Now!
+      </button>
+    </section>
+
+    <!-- footer -->
+    <section
+      id="footer"
+      class="flex lg:flex-row flex-col lg:justify-between gap-10 bg-[#5917B4] mt-32 lg:mt-36 px-5 lg:px-28 py-10 text-white lg:text-xl">
+      <img
+        src="src/asset/img/aa-logo-utama-3.png"
+        alt=""
+        class="w-60 lg:h-min" />
+      <div id="contact" class="flex flex-col gap-3">
+        <h2 class="mb-3 font-bold">Contact</h2>
+        <div class="flex flex-col gap-3">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Linkedin</a>
+        </div>
+      </div>
+      <div id="Address" class="flex flex-col gap-3">
+        <h2 class="mb-3 font-bold">Address</h2>
+        <p>3807 Geneva Street Brooklyn, New York</p>
+      </div>
+      <div id="newsletter" class="flex flex-col gap-3">
+        <h2 class="mb-3 font-bold">Newsletter</h2>
+        <div id="input" class="flex">
+          <input
+            type="email"
+            class="bg-white bg-opacity-50 pr-2 pl-4 rounded-s-md outline-none w-1/2 h-10 placeholder:text-white placeholder:text-sm"
+            placeholder="Email Address" />
+          <button
+            class="z-20 bg-white -ml-1 px-7 rounded-md h-10 font-bold text-[#680000] text-2xl">
+            >
+          </button>
+        </div>
+      </div>
+      <footer class="lg:hidden mt-5 px-5 text-center">
+        <p>Copyright © 2025 EduVerse. All rights reserved.</p>
+      </footer>
+    </section>
+    <footer
+      class="hidden lg:block lg:bg-[#5917B4] px-5 lg:py-5 text-white text-center">
+      <p class="lg:text-xl">Copyright © 2025 EduVerse. All rights reserved.</p>
+    </footer>
+    <!-- dark mode -->
+    <!-- Toggle Button -->
+    <div class="right-4 bottom-4 fixed">
+      <!-- Tombol Dark -->
+      <button
+        id="button-dark"
+        class="flex justify-center items-center bg-fixe rounded-full w-14 h-14 hover:scale-110 transition button-dark">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-9 h-9 text-lunar"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="white"
+          stroke-width="2">
+          <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
+        </svg>
+      </button>
+
+      <!-- Tombol Light -->
+      <button
+        id="button-light"
+        class="flex justify-center items-center bg-white rounded-full w-14 h-14 hover:scale-110 transition button-light">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-9 h-9 text-fixe"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2">
+          <circle cx="12" cy="12" r="5" />
+          <path
+            d="M12 1v2m0 18v2m11-11h-2M3 12H1m16.95 6.95l-1.41-1.41M6.46 6.46L5.05 5.05m12.9 0l-1.41 1.41M6.46 17.54l-1.41 1.41" />
+        </svg>
+      </button>
+    </div>
+    <script src="src/asset/script.js"></script>
+  </body>
+</html>
