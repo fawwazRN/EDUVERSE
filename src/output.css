@@ -1757,10 +1757,6 @@ video {
     height: 15rem;
   }
 
-  .lg\:h-64{
-    height: 16rem;
-  }
-
   .lg\:h-full{
     height: 100%;
   }
@@ -1842,10 +1838,6 @@ video {
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
   }
 
-  .lg\:overflow-y-scroll{
-    overflow-y: scroll;
-  }
-
   .lg\:bg-\[\#5917B4\]{
     --tw-bg-opacity: 1;
     background-color: rgb(89 23 180 / var(--tw-bg-opacity, 1));
@@ -1890,14 +1882,26 @@ video {
     line-height: 1;
   }
 
-  .lg\:text-9xl{
-    font-size: 8rem;
-    line-height: 1;
-  }
-
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-8xl{
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .lg\:font-bold{
+    font-weight: 700;
+  }
+
+  .lg\:font-semibold{
+    font-weight: 600;
+  }
+
+  .lg\:font-medium{
+    font-weight: 500;
   }
 }
 
